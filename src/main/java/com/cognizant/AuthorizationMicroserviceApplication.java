@@ -17,25 +17,21 @@ import com.cognizant.repository.UserRepository;
 @SpringBootApplication
 @EnableFeignClients
 public class AuthorizationMicroserviceApplication {
+    @Autowired
+    private UserRepository repository;
 
-	private UserRepository repository;
-	
-	
-	@Autowired
-	public AuthorizationMicroserviceApplication(UserRepository repository) {
-		this.repository = repository;
-	}
+    //Initialization of users
+    
+    @PostConstruct
+    public void initUser() {
+	List<User> users = Stream.of(new User(101, "Iftak", "password1"), new User(102, "User2", "password2")
 
-	@PostConstruct
-	public void initUser() {
-		List<User> users = Stream.of(new User(101, "Iftak", "password1"), new User(102, "User2", "password2")
+	).collect(Collectors.toList());
+	repository.saveAll(users);
+    }
 
-		).collect(Collectors.toList());
-		repository.saveAll(users);
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(AuthorizationMicroserviceApplication.class, args);
-	}
+    public static void main(String[] args) {
+	SpringApplication.run(AuthorizationMicroserviceApplication.class, args);
+    }
 
 }
