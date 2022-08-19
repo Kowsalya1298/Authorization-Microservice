@@ -49,5 +49,20 @@ public class CustomUserDetailService implements UserDetailsService {
 		}
 		
 	}
+	
+	public User register(User user) {
+	    try {
+		LOGGER.info("STARTED - Register User Service");
+		User userDetails = userRepository.save(user);
+		System.out.println(userDetails);
+		return userDetails;
+		}catch(Exception e)
+		{
+			LOGGER.error("ERROR-username not found");
+			throw new ResourceNotFound("User by the given username not found");
+		}
+	    
+	}
+	
 
 }

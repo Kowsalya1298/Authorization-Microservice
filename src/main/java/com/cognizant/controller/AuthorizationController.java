@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 import com.cognizant.exception.ResourceNotFound;
 import com.cognizant.model.AuthRequest;
+import com.cognizant.model.User;
+import com.cognizant.repository.UserRepository;
 import com.cognizant.service.CustomUserDetailService;
 import com.cognizant.util.JwtUtil;
 
@@ -28,8 +30,8 @@ public class AuthorizationController {
 	private CustomUserDetailService userDetailService;
 
 	private AuthenticationManager authenticationManager;
-
-	
+	@Autowired
+	private UserRepository userRepository;
 	@Autowired
 	public AuthorizationController(JwtUtil jwtUtil, CustomUserDetailService userDetailService,
 			AuthenticationManager authenticationManager) {
@@ -64,6 +66,20 @@ public class AuthorizationController {
 
 		LOGGER.info("END - generateToken");
 		return ResponseEntity.ok(jwtUtil.generateToken(authRequest.getUserName()));
+	}
+	
+	@PostMapping("/register")
+	public User register(@RequestBody User user) throws Exception {
+		LOGGER.info("STARTED - generateToken");
+		try {
+//		    userDetailService.register(user);
+		User  userDetails = userRepository.save(user);
+		    return  userDetails;
+		} catch (Exception e) {
+			LOGGER.error("EXCEPTION - generateToken");
+			throw new ResourceNotFound("user not saved");
+		}
+		
 	}
 	
 	
