@@ -201,3 +201,145 @@
 2022-08-20 11:03:32.380  INFO [authorizationService,69266c7f3dfecab7,40c369308eece19b] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
 2022-08-20 11:03:32.384  INFO [authorizationService,69266c7f3dfecab7,40c369308eece19b] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : END - loadUserByUsername
 2022-08-20 11:03:32.387  INFO [authorizationService,69266c7f3dfecab7,40c369308eece19b] 8812 --- [http-nio-9090-exec-10] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:45:56.504  INFO [authorizationService,7eb8f45ba2622613,53df7bf196535950] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:45:56.511  INFO [authorizationService,7eb8f45ba2622613,53df7bf196535950] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:45:56.516  INFO [authorizationService,7eb8f45ba2622613,53df7bf196535950] 8812 --- [http-nio-9090-exec-4] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:45:56.519  INFO [authorizationService,7eb8f45ba2622613,53df7bf196535950] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:45:56.522  INFO [authorizationService,7eb8f45ba2622613,53df7bf196535950] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:45:56.525  INFO [authorizationService,7eb8f45ba2622613,53df7bf196535950] 8812 --- [http-nio-9090-exec-4] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:45:56.731  INFO [authorizationService,07db890acf2e782a,feae45a4e1cea549] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:45:56.737  INFO [authorizationService,07db890acf2e782a,feae45a4e1cea549] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:45:56.742  INFO [authorizationService,07db890acf2e782a,feae45a4e1cea549] 8812 --- [http-nio-9090-exec-7] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:45:56.743  INFO [authorizationService,07db890acf2e782a,feae45a4e1cea549] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:45:56.746  INFO [authorizationService,07db890acf2e782a,feae45a4e1cea549] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:45:56.748  INFO [authorizationService,07db890acf2e782a,feae45a4e1cea549] 8812 --- [http-nio-9090-exec-7] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:46:25.692  INFO [authorizationService,a1403c5000c70d93,0bc8083beb5a5b72] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:46:25.696  INFO [authorizationService,a1403c5000c70d93,0bc8083beb5a5b72] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:46:25.703  INFO [authorizationService,a1403c5000c70d93,0bc8083beb5a5b72] 8812 --- [http-nio-9090-exec-8] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:46:25.705  INFO [authorizationService,a1403c5000c70d93,0bc8083beb5a5b72] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:46:25.708  INFO [authorizationService,a1403c5000c70d93,0bc8083beb5a5b72] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:46:25.710  INFO [authorizationService,a1403c5000c70d93,0bc8083beb5a5b72] 8812 --- [http-nio-9090-exec-8] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:46:25.891  INFO [authorizationService,685d65fd7ca7fdeb,eb0b5d16056b4ff9] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:46:25.896  INFO [authorizationService,685d65fd7ca7fdeb,eb0b5d16056b4ff9] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:46:25.902  INFO [authorizationService,685d65fd7ca7fdeb,eb0b5d16056b4ff9] 8812 --- [http-nio-9090-exec-1] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:46:25.904  INFO [authorizationService,685d65fd7ca7fdeb,eb0b5d16056b4ff9] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:46:25.909  INFO [authorizationService,685d65fd7ca7fdeb,eb0b5d16056b4ff9] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:46:25.911  INFO [authorizationService,685d65fd7ca7fdeb,eb0b5d16056b4ff9] 8812 --- [http-nio-9090-exec-1] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:47:16.855  INFO [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:47:16.856  INFO [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:47:16.862  INFO [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:47:16.884 ERROR [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] c.c.controller.AuthorizationController   : EXCEPTION - User authentication
+2022-08-20 14:47:16.890  INFO [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] c.c.exception.ControllerAdviceClass      : STARTED - controllerAdviceResponse
+2022-08-20 14:47:16.895  INFO [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] c.c.exception.ControllerAdviceClass      : END - controllerAdviceResponse
+2022-08-20 14:47:16.908  WARN [authorizationService,c084edb7595ecb1c,efeae197ed40220e] 8812 --- [http-nio-9090-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.ResourceNotFound: User not found]
+2022-08-20 14:47:17.027  INFO [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:47:17.027  INFO [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:47:17.029  INFO [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:47:17.030 ERROR [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] c.c.controller.AuthorizationController   : EXCEPTION - User authentication
+2022-08-20 14:47:17.031  INFO [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] c.c.exception.ControllerAdviceClass      : STARTED - controllerAdviceResponse
+2022-08-20 14:47:17.031  INFO [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] c.c.exception.ControllerAdviceClass      : END - controllerAdviceResponse
+2022-08-20 14:47:17.035  WARN [authorizationService,35ea57c60fcdb749,89cdab9a8f1060dd] 8812 --- [http-nio-9090-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.ResourceNotFound: User not found]
+2022-08-20 14:47:18.870  INFO [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:47:18.871  INFO [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:47:18.876  INFO [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:47:18.878 ERROR [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] c.c.controller.AuthorizationController   : EXCEPTION - User authentication
+2022-08-20 14:47:18.880  INFO [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] c.c.exception.ControllerAdviceClass      : STARTED - controllerAdviceResponse
+2022-08-20 14:47:18.881  INFO [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] c.c.exception.ControllerAdviceClass      : END - controllerAdviceResponse
+2022-08-20 14:47:18.886  WARN [authorizationService,c9e2993111894dc0,3cc76f9e7105995e] 8812 --- [http-nio-9090-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.ResourceNotFound: User not found]
+2022-08-20 14:47:18.996  INFO [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:47:18.997  INFO [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:47:19.000  INFO [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:47:19.000 ERROR [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] c.c.controller.AuthorizationController   : EXCEPTION - User authentication
+2022-08-20 14:47:19.001  INFO [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] c.c.exception.ControllerAdviceClass      : STARTED - controllerAdviceResponse
+2022-08-20 14:47:19.001  INFO [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] c.c.exception.ControllerAdviceClass      : END - controllerAdviceResponse
+2022-08-20 14:47:19.004  WARN [authorizationService,ea6dfdcac93bb2c3,95f780177a0f513c] 8812 --- [http-nio-9090-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.ResourceNotFound: User not found]
+2022-08-20 14:47:30.696  INFO [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:47:30.698  INFO [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:47:30.704  INFO [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:47:30.705 ERROR [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] c.c.controller.AuthorizationController   : EXCEPTION - User authentication
+2022-08-20 14:47:30.707  INFO [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] c.c.exception.ControllerAdviceClass      : STARTED - controllerAdviceResponse
+2022-08-20 14:47:30.707  INFO [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] c.c.exception.ControllerAdviceClass      : END - controllerAdviceResponse
+2022-08-20 14:47:30.713  WARN [authorizationService,f935fb8c192fc63a,e177a8971ec8b431] 8812 --- [http-nio-9090-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.ResourceNotFound: User not found]
+2022-08-20 14:47:30.883  INFO [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:47:30.884  INFO [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:47:30.888  INFO [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:47:30.889 ERROR [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] c.c.controller.AuthorizationController   : EXCEPTION - User authentication
+2022-08-20 14:47:30.891  INFO [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] c.c.exception.ControllerAdviceClass      : STARTED - controllerAdviceResponse
+2022-08-20 14:47:30.891  INFO [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] c.c.exception.ControllerAdviceClass      : END - controllerAdviceResponse
+2022-08-20 14:47:30.902  WARN [authorizationService,a06f781fde44e5c2,343eddcb1cd8c589] 8812 --- [http-nio-9090-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.ResourceNotFound: User not found]
+2022-08-20 14:48:24.025  INFO [authorizationService,9faece02b956e839,797a32ec54b3fa41] 8812 --- [http-nio-9090-exec-4] c.c.controller.AuthorizationController   : STARTED - User authentication
+2022-08-20 14:48:24.026  INFO [authorizationService,9faece02b956e839,797a32ec54b3fa41] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:48:24.030  INFO [authorizationService,9faece02b956e839,797a32ec54b3fa41] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:48:24.030  INFO [authorizationService,9faece02b956e839,797a32ec54b3fa41] 8812 --- [http-nio-9090-exec-4] c.c.controller.AuthorizationController   : END - generateToken
+2022-08-20 14:48:24.199  INFO [authorizationService,01d2142f5931a975,11871c46f5a568d5] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:48:24.204  INFO [authorizationService,01d2142f5931a975,11871c46f5a568d5] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:48:24.214  INFO [authorizationService,01d2142f5931a975,11871c46f5a568d5] 8812 --- [http-nio-9090-exec-7] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:48:24.222  INFO [authorizationService,01d2142f5931a975,11871c46f5a568d5] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:48:24.226  INFO [authorizationService,01d2142f5931a975,11871c46f5a568d5] 8812 --- [http-nio-9090-exec-7] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:48:24.230  INFO [authorizationService,01d2142f5931a975,11871c46f5a568d5] 8812 --- [http-nio-9090-exec-7] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:48:58.112  INFO [authorizationService,40d8ee01739e7d6b,6042300b3fa65661] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:48:58.120  INFO [authorizationService,40d8ee01739e7d6b,6042300b3fa65661] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:48:58.124  INFO [authorizationService,40d8ee01739e7d6b,6042300b3fa65661] 8812 --- [http-nio-9090-exec-8] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:48:58.125  INFO [authorizationService,40d8ee01739e7d6b,6042300b3fa65661] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:48:58.128  INFO [authorizationService,40d8ee01739e7d6b,6042300b3fa65661] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:48:58.129  INFO [authorizationService,40d8ee01739e7d6b,6042300b3fa65661] 8812 --- [http-nio-9090-exec-8] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:49:02.742  INFO [authorizationService,5219ec7fd947e53d,7f78f2ff20006026] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:02.745  INFO [authorizationService,5219ec7fd947e53d,7f78f2ff20006026] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:02.751  INFO [authorizationService,5219ec7fd947e53d,7f78f2ff20006026] 8812 --- [http-nio-9090-exec-1] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:49:02.753  INFO [authorizationService,5219ec7fd947e53d,7f78f2ff20006026] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:02.757  INFO [authorizationService,5219ec7fd947e53d,7f78f2ff20006026] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:02.758  INFO [authorizationService,5219ec7fd947e53d,7f78f2ff20006026] 8812 --- [http-nio-9090-exec-1] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:49:02.931  INFO [authorizationService,69bcdd5315481e58,2a0f345eed0f8b10] 8812 --- [http-nio-9090-exec-2] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:02.935  INFO [authorizationService,69bcdd5315481e58,2a0f345eed0f8b10] 8812 --- [http-nio-9090-exec-2] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:02.938  INFO [authorizationService,69bcdd5315481e58,2a0f345eed0f8b10] 8812 --- [http-nio-9090-exec-2] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:49:02.939  INFO [authorizationService,69bcdd5315481e58,2a0f345eed0f8b10] 8812 --- [http-nio-9090-exec-2] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:02.942  INFO [authorizationService,69bcdd5315481e58,2a0f345eed0f8b10] 8812 --- [http-nio-9090-exec-2] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:02.944  INFO [authorizationService,69bcdd5315481e58,2a0f345eed0f8b10] 8812 --- [http-nio-9090-exec-2] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:49:39.635  INFO [authorizationService,6bae7cdb64ffa356,9587e31baf7fd892] 8812 --- [http-nio-9090-exec-5] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:39.643  INFO [authorizationService,6bae7cdb64ffa356,9587e31baf7fd892] 8812 --- [http-nio-9090-exec-5] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:39.650  INFO [authorizationService,6bae7cdb64ffa356,9587e31baf7fd892] 8812 --- [http-nio-9090-exec-5] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:49:39.653  INFO [authorizationService,6bae7cdb64ffa356,9587e31baf7fd892] 8812 --- [http-nio-9090-exec-5] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:39.657  INFO [authorizationService,6bae7cdb64ffa356,9587e31baf7fd892] 8812 --- [http-nio-9090-exec-5] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:39.661  INFO [authorizationService,6bae7cdb64ffa356,9587e31baf7fd892] 8812 --- [http-nio-9090-exec-5] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:49:39.841  INFO [authorizationService,a33789d68263f725,5c1f7106f51befb8] 8812 --- [http-nio-9090-exec-6] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:39.844  INFO [authorizationService,a33789d68263f725,5c1f7106f51befb8] 8812 --- [http-nio-9090-exec-6] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:39.850  INFO [authorizationService,a33789d68263f725,5c1f7106f51befb8] 8812 --- [http-nio-9090-exec-6] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:49:39.852  INFO [authorizationService,a33789d68263f725,5c1f7106f51befb8] 8812 --- [http-nio-9090-exec-6] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:39.855  INFO [authorizationService,a33789d68263f725,5c1f7106f51befb8] 8812 --- [http-nio-9090-exec-6] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:39.857  INFO [authorizationService,a33789d68263f725,5c1f7106f51befb8] 8812 --- [http-nio-9090-exec-6] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:49:52.723  INFO [authorizationService,468fa972c9bb25c2,9de907251f539f10] 8812 --- [http-nio-9090-exec-9] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:52.729  INFO [authorizationService,468fa972c9bb25c2,9de907251f539f10] 8812 --- [http-nio-9090-exec-9] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:52.735  INFO [authorizationService,468fa972c9bb25c2,9de907251f539f10] 8812 --- [http-nio-9090-exec-9] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:49:52.738  INFO [authorizationService,468fa972c9bb25c2,9de907251f539f10] 8812 --- [http-nio-9090-exec-9] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:52.742  INFO [authorizationService,468fa972c9bb25c2,9de907251f539f10] 8812 --- [http-nio-9090-exec-9] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:52.750  INFO [authorizationService,468fa972c9bb25c2,9de907251f539f10] 8812 --- [http-nio-9090-exec-9] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:49:52.965  INFO [authorizationService,941bfd0334a8091d,f10c1296574eb93a] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:52.970  INFO [authorizationService,941bfd0334a8091d,f10c1296574eb93a] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:52.977  INFO [authorizationService,941bfd0334a8091d,f10c1296574eb93a] 8812 --- [http-nio-9090-exec-10] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:49:52.978  INFO [authorizationService,941bfd0334a8091d,f10c1296574eb93a] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:49:52.983  INFO [authorizationService,941bfd0334a8091d,f10c1296574eb93a] 8812 --- [http-nio-9090-exec-10] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:49:52.986  INFO [authorizationService,941bfd0334a8091d,f10c1296574eb93a] 8812 --- [http-nio-9090-exec-10] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:50:44.519  INFO [authorizationService,a3afab5812581705,02ae9a55311b5738] 8812 --- [http-nio-9090-exec-3] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:50:44.525  INFO [authorizationService,a3afab5812581705,02ae9a55311b5738] 8812 --- [http-nio-9090-exec-3] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:50:44.529  INFO [authorizationService,a3afab5812581705,02ae9a55311b5738] 8812 --- [http-nio-9090-exec-3] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:50:44.530  INFO [authorizationService,a3afab5812581705,02ae9a55311b5738] 8812 --- [http-nio-9090-exec-3] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:50:44.533  INFO [authorizationService,a3afab5812581705,02ae9a55311b5738] 8812 --- [http-nio-9090-exec-3] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:50:44.535  INFO [authorizationService,a3afab5812581705,02ae9a55311b5738] 8812 --- [http-nio-9090-exec-3] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:50:44.698  INFO [authorizationService,c5754f87d367c9d1,d1da7c69be66e90d] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:50:44.701  INFO [authorizationService,c5754f87d367c9d1,d1da7c69be66e90d] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:50:44.705  INFO [authorizationService,c5754f87d367c9d1,d1da7c69be66e90d] 8812 --- [http-nio-9090-exec-4] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:50:44.707  INFO [authorizationService,c5754f87d367c9d1,d1da7c69be66e90d] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:50:44.709  INFO [authorizationService,c5754f87d367c9d1,d1da7c69be66e90d] 8812 --- [http-nio-9090-exec-4] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:50:44.711  INFO [authorizationService,c5754f87d367c9d1,d1da7c69be66e90d] 8812 --- [http-nio-9090-exec-4] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:58:35.596  INFO [authorizationService,96b9ec75182f3642,9b4373594d8f5b11] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:58:35.598  INFO [authorizationService,96b9ec75182f3642,9b4373594d8f5b11] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:58:35.601  INFO [authorizationService,96b9ec75182f3642,9b4373594d8f5b11] 8812 --- [http-nio-9090-exec-8] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:58:35.601  INFO [authorizationService,96b9ec75182f3642,9b4373594d8f5b11] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:58:35.603  INFO [authorizationService,96b9ec75182f3642,9b4373594d8f5b11] 8812 --- [http-nio-9090-exec-8] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:58:35.604  INFO [authorizationService,96b9ec75182f3642,9b4373594d8f5b11] 8812 --- [http-nio-9090-exec-8] c.c.controller.AuthorizationController   : END - authorization
+2022-08-20 14:58:35.702  INFO [authorizationService,618d47444b430e1a,4509a6184e77bd3e] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:58:35.704  INFO [authorizationService,618d47444b430e1a,4509a6184e77bd3e] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:58:35.706  INFO [authorizationService,618d47444b430e1a,4509a6184e77bd3e] 8812 --- [http-nio-9090-exec-1] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-08-20 14:58:35.707  INFO [authorizationService,618d47444b430e1a,4509a6184e77bd3e] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-08-20 14:58:35.708  INFO [authorizationService,618d47444b430e1a,4509a6184e77bd3e] 8812 --- [http-nio-9090-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-08-20 14:58:35.709  INFO [authorizationService,618d47444b430e1a,4509a6184e77bd3e] 8812 --- [http-nio-9090-exec-1] c.c.controller.AuthorizationController   : END - authorization
