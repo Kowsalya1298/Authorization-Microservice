@@ -8,13 +8,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.cognizant.exception.ResourceNotFound;
 import com.cognizant.model.AuthRequest;
 import com.cognizant.model.User;
@@ -26,6 +29,9 @@ import com.cognizant.util.JwtUtil;
 public class AuthorizationController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthorizationController.class);
+    private static final String BAD_CREDENTIALS_MESSAGE = "Invalid Username or Password";
+    private static final String USER_NOT_CREATED_MESSAGE = "User Not Created. Try Again Later";
+
     @Autowired
     private JwtUtil jwtUtil;
     @Autowired
@@ -35,69 +41,93 @@ public class AuthorizationController {
     @Autowired
     private UserRepository userRepository;
 
-    // starting message
-
-    @GetMapping("/")
-    public ResponseEntity<String> welcome() {
-	LOGGER.info("STARTED authorization microservice welcome");
-	LOGGER.info("END - authorization microservice welcome");
-	return ResponseEntity.ok("Wecome to security application");
-    }
-
-    // Authenticate user and generate token
+    /**
+     * @URL: http://localhost:8090/authenticate
+     * 
+     * @Data: [Admin] { "userName": "Kowsi", "password": "12345678" }
+     * 
+     * @param authRequest {userName, password}
+     * 
+     * @return token on successful login else return error message
+     */
 
     @PostMapping("/authenticate")
-    public ResponseEntity<String> generateToken(@RequestBody AuthRequest authRequest) throws Exception {
+    public ResponseEntity<String> login(@RequestBody AuthRequest authRequest) throws Exception {
 	LOGGER.info("STARTED - User authentication");
 	try {
-	    authenticationManager.authenticate(
+	    Authentication authenticate = authenticationManager.authenticate(
 		    new UsernamePasswordAuthenticationToken(authRequest.getUserName(), authRequest.getPassword()));
-
-	} catch (Exception e) {
-	    LOGGER.error("EXCEPTION - User authentication");
-	    throw new ResourceNotFound("User not found");
+	    if (authenticate.isAuthenticated()) {
+		LOGGER.info("Valid User detected");
+	    }
+	} catch (BadCredentialsException e) {
+	    LOGGER.error("EXCEPTION - Bad Credentials");
+	    return new ResponseEntity<>(BAD_CREDENTIALS_MESSAGE, HttpStatus.NOT_FOUND);
 	}
-
-	LOGGER.info("END - generateToken");
-	return ResponseEntity.ok(jwtUtil.generateToken(authRequest.getUserName()));
+	String token = jwtUtil.generateToken(authRequest.getUserName());
+	LOGGER.info("END - Generated Token " + token.toString());
+	return new ResponseEntity<>(token, HttpStatus.OK);
     }
 
-    //Register new user
-    
+    /**
+     * Register new user
+     * 
+     * @URL: http://localhost:9090/register
+     * 
+     * @param user {userName, password}
+     * 
+     * @return new newly created user else return error message
+     */
+
     @PostMapping("/register")
-    public User register(@RequestBody User user) throws Exception {
-	LOGGER.info("STARTED - generateToken");
+    public ResponseEntity<?> register(@RequestBody User user) throws Exception {
+	LOGGER.info("STARTED - New User Registration");
 	try {
 	    User userDetails = userRepository.save(user);
-	    return userDetails;
+	    return new ResponseEntity<>(userDetails, HttpStatus.CREATED);
 	} catch (Exception e) {
-	    LOGGER.error("EXCEPTION - generateToken");
-	    throw new ResourceNotFound("user not saved");
+	    LOGGER.error("EXCEPTION - New User Not Created");
+	    return new ResponseEntity<>(USER_NOT_CREATED_MESSAGE, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
     }
 
-    // validtiion of the generated jwt token to access '/authorize' endpoint
+    /**
+     * Checks if the token is a valid administrator token
+     * 
+     * @URL: http://localhost:9090/authorize
+     * 
+     * @Header: [Authorization] = JWT Token
+     * 
+     * @param token
+     * 
+     * @return true if valid, else return false
+     */
 
     @GetMapping("/authorize")
-    public ResponseEntity<?> authorization(@RequestHeader("Authorization") String token1) {
+    public ResponseEntity<?> authorization(@RequestHeader("Authorization") String authToken) {
 
-	LOGGER.info("STARTED - authorization");
-	String token = token1.substring(7);
+	LOGGER.info("STARTED - token authorization");
+	String token = authToken.substring(7);
 
 	UserDetails user = userDetailService.loadUserByUsername(jwtUtil.extractUsername(token));
 
 	if (jwtUtil.validateToken(token, user)) {
-	    LOGGER.info("END - authorization");
+	    LOGGER.info("END - token authorized");
 	    return new ResponseEntity<>(true, HttpStatus.OK);
 	} else {
-	    LOGGER.info("END - authorization");
-	    return new ResponseEntity<>(false, HttpStatus.FORBIDDEN);
+	    LOGGER.info("END - Invalid token");
+	    return new ResponseEntity<>(false, HttpStatus.UNAUTHORIZED);
 	}
 
     }
 
-    @GetMapping("/getAll")
+    /**
+     * @URL: http://localhost:9090/getAllUsers
+     * 
+     * @return all users
+     */
+    @GetMapping("/getAllUsers")
     public List<User> getAllDetail() {
 	LOGGER.info("STARTED - getAllDetail");
 	LOGGER.info("END - getAllDetail");
