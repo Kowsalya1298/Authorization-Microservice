@@ -18,21 +18,14 @@ import com.cognizant.repository.UserRepository;
 public class CustomUserDetailService implements UserDetailsService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CustomUserDetailService.class);
-
+	@Autowired
 	private UserRepository userRepository;
 
-	@Autowired
-	public CustomUserDetailService(UserRepository userRepository) {
-		this.userRepository = userRepository;
-	}
-	
-	/*loadbyUserName function loads user from the repository 
-	 * returns UserDetails 
+	/**
+	 * loads user from the repository returns UserDetails 
+	 * 
+	 * @param username
 	 */
-
-	
-	//loading user name from user database passing to spring provided UserDetails  
-	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		try {
@@ -50,7 +43,12 @@ public class CustomUserDetailService implements UserDetailsService {
 		
 	}
 	
-	public User register(User user) {
+	/**
+	 * @param user
+	 * @return created new user
+	 * @throws Exception
+	 */
+	public User register(User user)throws Exception {
 	    try {
 		LOGGER.info("STARTED - Register User Service");
 		User userDetails = userRepository.save(user);
