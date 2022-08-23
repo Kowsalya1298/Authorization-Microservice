@@ -38,3 +38,15 @@ phases:
        - docker push $REPOSITORY_URI:latest
 
        - docker push $REPOSITORY_URI:$IMAGE_TAG
+
+       - echo Writing image definitions file...
+
+       - printf '[{"name":"sk-authorization-microservice","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+
+       - cat imagedefinitions.json
+
+       - echo Post build completed
+
+artifacts:
+
+  files: imagedefinitions.json
